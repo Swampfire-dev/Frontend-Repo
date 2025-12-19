@@ -1,0 +1,73 @@
+.cert-stats {
+  padding: 1.2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stats-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.stats-list li {
+  margin: 0.75rem 0;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+/* Base Icon Style */
+.icon {
+  margin-right: 10px;
+  font-size: 1.2rem;
+  vertical-align: middle;
+  color: #666; /* Default icon color */
+}
+
+/* Icon colors for CertStatsCard */
+
+.icon.FaCertificate {
+  color: #e5d242; /* Yellow/Gray for Total Certificates Issued */
+}
+
+.icon.FaUsers {
+  color: #007bff; /* Blue for Total Employees Certified */
+}
+
+.icon.FaArrowUp {
+  color: gold; /* Gold for Top Certified Employee */
+}
+
+.icon.FaArrowDown {
+  color: #dc3545; /* Red for Least Certified Employee */
+}
+
+.icon.FaChartLine {
+  color: #6f42c1; /* Purple for Certificates by Status */
+}
+
+.icon.FaClock {
+  color: #f0ad4e; /* Orange/Yellow for Certificates Expiring Soon */
+}
+
+.icon.FaLayerGroup {
+  color: #20c997; /* Teal for Average Certificates per Employee */
+}
+
+.icon.FaCalendarCheck {
+  color: #e83e8c; /* Pink for Certificates Completed This Month */
+}
+
+/* Row layout for Valid/Expired */
+.stats-row {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.stats-row li {
+  flex: 1;
+  margin: 0;
+}

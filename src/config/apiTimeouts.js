@@ -1,0 +1,24 @@
+const API_TIMEOUTS = {
+  CERTIFICATE: {
+    CREATE: 10000,
+    LIST: 5000,
+    DETAILS: 5000,
+    PARTNER_LIST: 5000,
+    STATS: 5000,
+    TRENDS: 5000,
+    DOMAIN_TRENDS: 5000,
+  },
+
+  TRAINING: {
+    CREATE: 20000,
+    LIST: 5000,
+    DETAILS: 5000,
+    PARTNER_LIST: 5000,
+    STATS: 5000,
+    TRENDS: 5000,
+    DOMAIN_TRENDS: 5000,
+  },
+
+};
+
+export default API_TIMEOUTS;

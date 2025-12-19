@@ -1,0 +1,97 @@
+/* ---------------------------
+   Certificate / Training Stats Card
+---------------------------- */
+.cert-stats {
+  padding: 1.2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.stats-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.stats-list li {
+  margin: 0.75rem 0;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+/* Base Icon Style */
+.icon {
+  margin-right: 10px;
+  font-size: 1.3rem;
+  vertical-align: middle;
+  color: #666; /* default icon color */
+}
+
+/* Icon colors for StatsCard (updated for Training metrics) */
+.icon.FaUsers {
+  color: #007bff; /* Blue for Total Employees Trained */
+}
+
+.icon.FaLayerGroup {
+  color: #20c997; /* Teal for Trainings Assigned */
+}
+
+.icon.FaCheckCircle {
+  color: #28a745; /* Green for Trainings Completed */
+}
+
+.icon.FaHourglassHalf {
+  color: #fd7e14; /* Orange for Ongoing Trainings */
+}
+
+.icon.FaCalendarCheck {
+  color: #6f42c1; /* Purple for Completed This Month */
+}
+
+.icon.FaArrowUp {
+  color: gold; /* Gold for Top Performing Employee */
+}
+
+.icon.FaArrowDown {
+  color: #dc3545; /* Red for Least Trained Employee */
+}
+
+.icon.FaChartLine {
+  color: #17a2b8; /* Teal-ish for Completion Rate */
+}
+
+.icon.FaStar {
+  color: #ffc107; /* Yellow for Most Popular Training */
+}
+
+.icon.FaRegStar {
+  color: #adb5bd; /* Gray for Least Popular Training */
+}
+
+.icon.FaBookOpen {
+  color: #20c997; /* Teal for Current Training */
+}
+
+.icon.FaBook {
+  color: #6610f2; /* Purple for Last Completed Training */
+}
+
+.icon.FaClock {
+  color: #f0ad4e; /* Orange for Total Hours Trained */
+}
+
+/* Row layout for multiple stats in one line */
+.stats-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.stats-row li {
+  flex: 1 1 45%; /* Responsive two-column layout */
+  margin: 0;
+}
